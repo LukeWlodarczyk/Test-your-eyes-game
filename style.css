@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+}
+
+.container {
+  margin: .5em auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 464px;
+}
+
+.game{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: .5em;
+  border: 1px solid black;
+  transition: .3s;
+}
+
+.square:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 black;
+  transform: scale(1.2);
+}
+
+.correct::after {
+  opacity: 0;
+  content: '\2A54';
+  height: 100%;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 3s;
+}
+
+@keyframes opacity {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+.difficulty {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin: 0 .5em;
+}
+
+.startBtn {
+  border: 1px solid black;
+  background: transparent;
+  padding: 5px;
+  transition: .3s;
+}
+
+.startBtn:hover {
+  box-shadow: 0 0px 30px 10px lightblue inset;
+}
+
+.score {
+  text-align: center;
+}
