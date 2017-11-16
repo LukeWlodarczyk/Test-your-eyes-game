@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       return s.style.backgroundColor = color;
     });
     num = getRandomNum();
-    console.log(num);
     sqrs[num].style.backgroundColor = shadeRGBColor(color, lighten);
   }
 
