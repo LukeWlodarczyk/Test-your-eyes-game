@@ -110,7 +110,8 @@ span {
   transition: .3s; }
 
 .startBtn:hover {
-  box-shadow: 0 0px 30px 10px lightblue inset; }
+  box-shadow: 0 0px 30px 10px lightblue inset;
+  cursor: pointer; }
 
 .score {
   text-align: center; }
