@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: skyblue; }
+
+.container {
+  margin: .5em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 464px; }
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: .5em;
+  border: 1px solid black;
+  transition: .3s; }
+
+.square:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.correct::after {
+  opacity: 0;
+  content: '\2A54';
+  height: 100%;
+  font-size: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: opacity 3s;
+          animation: opacity 3s; }
+
+@-webkit-keyframes opacity {
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1; } }
+
+@keyframes opacity {
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  75% {
+    opacity: 1; } }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+h1 {
+  text-align: center; }
+
+.difficulty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+span {
+  margin: 0 .5em; }
+
+.startBtn {
+  border: 1px solid black;
+  background: transparent;
+  padding: 5px;
+  transition: .3s; }
+
+.startBtn:hover {
+  box-shadow: 0 0px 30px 10px lightblue inset; }
+
+.score {
+  text-align: center; }
